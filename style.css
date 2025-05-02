@@ -1,0 +1,278 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px; /* Margin lebih kecil untuk layar seluler */
+    background-color: #e9ecef;
+    color: #343a40;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 100%; /* Kontainer mengisi lebar layar pada seluler */
+    margin: 20px auto; /* Margin lebih kecil dan tetap di tengah */
+    background-color: #fff;
+    padding: 20px; /* Padding lebih kecil untuk layar seluler */
+    border-radius: 8px; /* Sudut lebih kecil untuk tampilan lebih ringkas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Bayangan lebih halus */
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px; /* Padding bawah lebih kecil */
+    border-bottom: 1px solid #dee2e6; /* Garis pemisah lebih tipis */
+    margin-bottom: 20px; /* Margin bawah lebih kecil */
+    position: relative;
+}
+
+.profile-image-container {
+    width: 80px; /* Ukuran gambar profil lebih kecil untuk seluler */
+    height: 80px; /* Ukuran gambar profil lebih kecil untuk seluler */
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 10px; /* Margin bawah lebih kecil */
+    border: 3px solid #fff; /* Border lebih tipis */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Bayangan lebih halus */
+    position: absolute;
+    top: -80px; /* Sesuaikan top berdasarkan ukuran baru */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-image-container:hover {
+    transform: translateX(-50%) scale(1.03); /* Efek zoom lebih kecil */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan saat hover lebih halus */
+}
+
+header h1 {
+    margin-top: 40px; /* Sesuaikan margin-top berdasarkan ukuran baru */
+    margin-bottom: 8px; /* Margin bawah lebih kecil */
+    font-size: 2em; /* Ukuran font lebih kecil untuk seluler */
+    color: #007bff;
+}
+
+header p.jabatan {
+    font-style: italic;
+    color: #6c757d;
+    font-size: 0.9em; /* Ukuran font lebih kecil untuk seluler */
+}
+
+section {
+    margin-bottom: 20px; /* Margin bawah lebih kecil */
+}
+
+section h2 {
+    color: #343a40;
+    border-bottom: 2px solid #007bff; /* Garis bawah lebih tipis */
+    padding-bottom: 8px; /* Padding bawah lebih kecil */
+    margin-bottom: 15px; /* Margin bawah lebih kecil */
+    font-size: 1.5em; /* Ukuran font lebih kecil untuk seluler */
+}
+
+.kontak ul, .keterampilan ul {
+    list-style: none;
+    padding: 0;
+}
+
+.kontak li {
+    margin-bottom: 10px; /* Margin bawah lebih kecil */
+    display: flex;
+    align-items: center;
+}
+
+.kontak li i {
+    margin-right: 8px; /* Margin kanan lebih kecil */
+    color: #007bff;
+    font-size: 1em; /* Ukuran font lebih kecil untuk seluler */
+}
+
+.kontak a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.kontak a:hover {
+    color: #0056b3;
+}
+
+.pendidikan .item, .pengalaman .item, .proyek .item {
+    margin-bottom: 20px; /* Margin bawah lebih kecil */
+    padding: 15px; /* Padding lebih kecil untuk seluler */
+    border: 1px solid #ced4da;
+    border-radius: 6px; /* Sudut lebih kecil */
+    background-color: #f8f9fa;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05); /* Bayangan lebih halus */
+}
+
+.pendidikan h3, .pengalaman h3, .proyek h3 {
+    margin-top: 0;
+    color: #343a40;
+    font-size: 1.3em; /* Ukuran font lebih kecil untuk seluler */
+    margin-bottom: 5px;
+}
+
+.pendidikan p.tahun, .pengalaman p.tahun, .proyek p.tahun {
+    font-style: italic;
+    color: #6c757d;
+    margin-bottom: 8px; /* Margin bawah lebih kecil */
+    font-size: 0.9em; /* Ukuran font lebih kecil untuk seluler */
+}
+
+.pengalaman ul {
+    padding-left: 20px; /* Padding kiri lebih kecil */
+    list-style-type: disc;
+}
+
+.pengalaman li {
+    margin-bottom: 6px; /* Margin bawah lebih kecil */
+    font-size: 0.95em; /* Ukuran font sedikit lebih kecil */
+}
+
+.keterampilan ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* Gap lebih kecil */
+}
+
+.keterampilan li {
+    display: inline-block;
+    padding: 6px 12px; /* Padding lebih kecil */
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px; /* Sudut lebih kecil */
+    font-size: 0.85em; /* Ukuran font lebih kecil */
+}
+
+.proyek a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.proyek a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px; /* Margin atas lebih kecil */
+    padding-top: 15px; /* Padding atas lebih kecil */
+    border-top: 1px solid #dee2e6; /* Garis atas lebih tipis */
+    color: #6c757d;
+    font-size: 0.8em; /* Ukuran font lebih kecil */
+}
+
+section.kontak table{
+    text-align: left;
+}
+
+/* Media query untuk layar dengan lebar minimal 768px (ukuran tablet ke atas) */
+@media (min-width: 768px) {
+    body {
+        margin: 40px;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    header {
+        padding-bottom: 30px;
+        border-bottom: 2px solid #dee2e6;
+        margin-bottom: 30px;
+    }
+
+    .profile-image-container {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 15px;
+        border: 5px solid #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        top: -100px;
+    }
+
+    header h1 {
+        margin-top: 60px;
+        margin-bottom: 10px;
+        font-size: 3em;
+    }
+
+    header p.jabatan {
+        font-size: 1.1em;
+    }
+
+    section {
+        margin-bottom: 30px;
+    }
+
+    section h2 {
+        border-bottom: 3px solid #007bff;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        font-size: 1.75em;
+    }
+
+    .kontak li {
+        margin-bottom: 12px;
+    }
+
+    .kontak li i {
+        margin-right: 10px;
+        font-size: 1.1em;
+    }
+
+    .pendidikan .item, .pengalaman .item, .proyek .item {
+        margin-bottom: 25px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .pendidikan h3, .pengalaman h3, .proyek h3 {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+    }
+
+    .pendidikan p.tahun, .pengalaman p.tahun, .proyek p.tahun {
+        margin-bottom: 10px;
+        font-size: 1em;
+    }
+
+    .pengalaman ul {
+        padding-left: 25px;
+    }
+
+    .pengalaman li {
+        margin-bottom: 8px;
+        font-size: 1em;
+    }
+
+    .keterampilan ul {
+        gap: 10px;
+    }
+
+    .keterampilan li {
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-size: 0.9em;
+    }
+
+    footer {
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 2px solid #dee2e6;
+        font-size: 0.9em;
+    }
+}
